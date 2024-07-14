@@ -14,6 +14,7 @@ function App() {
   return (
     <>
       <div>
+        <h1>{import.meta.env.VITE_API_URL}</h1>
         <Login />
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
