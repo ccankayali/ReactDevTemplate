@@ -10,11 +10,14 @@ import Login from './modules/auth/pages/Login'
 
 function App() {
   const [count, setCount] = useState(0)
+  let testCount = 2
+  testCount = 5
 
   return (
     <>
       <div>
         <h1>{import.meta.env.VITE_API_URL}</h1>
+        <h2>{testCount}</h2>
         <Login />
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />

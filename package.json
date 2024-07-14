@@ -5,15 +5,19 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "run-s type-check build:development",
+    "build": "run-s type-check build:dev",
     "build:dev": "vite build --mode development",
-    "build:staging": "vite build --mode staging",
+    "build:stage": "vite build --mode staging",
     "build:prod": "vite build --mode production",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "type-check": "tsc --noEmit -p tsconfig.json --composite false"
+    "type-check": "tsc --noEmit -p tsconfig.json --composite false",
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "dependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
