@@ -1,10 +1,10 @@
-import { ReactLogo } from '@/core/components/icons'
+import { Outlet } from 'react-router'
 
 export const AuthLayout = () => {
     return (
         <div>
-            <h3>Auth Layout</h3>
-            <ReactLogo width={100} height={100} />
+            <h1>Authentication Layout</h1>
+            <Outlet />
         </div>
     )
 }
