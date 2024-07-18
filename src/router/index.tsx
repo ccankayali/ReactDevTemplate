@@ -5,7 +5,6 @@ import { PanelLayouts } from '../core/layouts/panel/PanelLayouts'
 import { NotFound } from '../core/pages/NotFound'
 import { authRoutes } from '../modules/auth/routes'
 import { dashboardRoutes } from '../modules/panel/dashboard/routes'
-
 import { ROUTES } from './routes'
 
 export const router = createBrowserRouter([
