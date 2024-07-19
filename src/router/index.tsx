@@ -1,7 +1,7 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom'
 
 import { AuthLayout } from '../core/layouts/auth/AuthLayout'
-import { PanelLayouts } from '../core/layouts/panel/PanelLayouts'
+import { PanelLayout } from '../core/layouts/panel/PanelLayouts'
 import { NotFound } from '../core/pages/NotFound'
 import { authRoutes } from '../modules/auth/routes'
 import { dashboardRoutes } from '../modules/panel/dashboard/routes'
@@ -17,7 +17,7 @@ export const router = createBrowserRouter([
     children: [...authRoutes]
   },
   {
-    element: <PanelLayouts />,
+    element: <PanelLayout />,
     children: [...dashboardRoutes]
   },
   {
